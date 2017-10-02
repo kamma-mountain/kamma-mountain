@@ -4,10 +4,27 @@
 @import 'normalize.css'
 @import 'test-partial.sass'
 
+// variables
+$breakpoint-lg: 768px
+
+//styles
 body
 	background-color: gray
 
-.row
-	.grid-half
-		display: inline-block
-		width: 50%
+img
+	max-width: 100%
+	height: auto
+
+
+
+//media queries
+@media (min-width: $breakpoint-lg)
+	.row
+		padding: 3em
+		background-color: pink
+		.grid-half
+			display: inline-block
+			width: 50%
+			vertical-align: top 
+			.content 
+				padding: 2em
