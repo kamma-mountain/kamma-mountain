@@ -3,19 +3,46 @@ h1 {
   font-size: 5em; }
 
 body {
-  background-color: gray; }
+  background-color: #ffffff;
+  font-family: "Inconsolata", monospace; }
 
 img {
   max-width: 100%;
   height: auto; }
 
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif; }
+
 @media (min-width: 768px) {
   .row {
-    padding: 3em;
-    background-color: pink; }
+    padding: 3em; }
     .row .grid-half {
       display: inline-block;
       width: 50%;
       vertical-align: top; }
       .row .grid-half .content {
         padding: 2em; } }
+
+#logo {
+  width: 90%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  max-width: 370px;
+  padding: 1rem; }
+  @media (min-width: 768px) {
+    #logo {
+      width: 33%;
+      padding: 3rem; } }
+
+nav {
+  color: #cb4f3f;
+  font-size: 1.25em; }
+  @media (min-width: 768px) {
+    nav ul {
+      text-align: center; }
+      nav ul li {
+        display: inline-block;
+        padding: 0.5em 1em;
+        text-align: center;
+        text-decoration: none; } }

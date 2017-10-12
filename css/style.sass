@@ -6,25 +6,56 @@
 
 // variables
 $breakpoint-lg: 768px
+$red: #cb4f3f
+
+// mixins
+@mixin lg
+	@media (min-width: #{$breakpoint-lg})
+		@content
 
 //styles
 body
-	background-color: gray
+	background-color: #ffffff
+	font-family: 'Inconsolata', monospace
 
 img
 	max-width: 100%
 	height: auto
 
+h1, h2, h3
+	font-family: 'Roboto', sans-serif
 
-
-//media queries
-@media (min-width: $breakpoint-lg)
-	.row
+//grid
+.row
+	@include lg
 		padding: 3em
-		background-color: pink
 		.grid-half
 			display: inline-block
 			width: 50%
 			vertical-align: top 
 			.content 
 				padding: 2em
+
+//header
+
+#logo
+	width: 90%
+	height: auto
+	position: relative
+	margin: 0 auto
+	max-width: 370px
+	padding: 1rem
+	+lg
+		width: 33%
+		padding: 3rem
+nav
+	color: $red
+	font-size: 1.25em
+	+lg
+		ul
+			text-align: center
+			li 
+				display: inline-block
+				padding: .5em 1em
+				text-align: center
+				text-decoration: none 
