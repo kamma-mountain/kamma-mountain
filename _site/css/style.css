@@ -1,7 +1,4 @@
 @import url(normalize.css);
-h1 {
-  font-size: 5em; }
-
 body {
   background-color: #ffffff;
   font-family: "Inconsolata", monospace; }
@@ -11,17 +8,55 @@ img {
   height: auto; }
 
 h1, h2, h3 {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  color: #cb4f3f;
+  margin: 0.25em 0; }
+
+h2.product {
+  font-weight: 100;
+  font-size: 1.75em; }
+
+p {
+  color: #2b6c2c;
+  font-size: 1.2em; }
+
+a {
+  color: #2b6c2c; }
+  a:hover {
+    color: #cb4f3f; }
+
+nav {
+  font-size: 2em; }
+  nav a {
+    text-decoration: none;
+    color: #cb4f3f;
+    font-size: 1.25em; }
+    nav a:hover {
+      text-decoration: underline; }
+
+.btn {
+  padding: 1em;
+  border: 1px solid #2b6c2c;
+  border-radius: 8px;
+  text-align: center;
+  margin: 2em 0;
+  font-size: 1.1em; }
+  .btn:hover {
+    border: 1px solid #cb4f3f;
+    color: #cb4f3f; }
 
 @media (min-width: 768px) {
   .row {
     padding: 3em; }
-    .row .grid-half {
+    .row .grid .content {
+      padding: 2em; }
+    .row .grid--half {
       display: inline-block;
       width: 50%;
       vertical-align: top; }
-      .row .grid-half .content {
-        padding: 2em; } }
+    .row .grid--full {
+      display: block;
+      width: 100%; } }
 
 #logo {
   width: 90%;

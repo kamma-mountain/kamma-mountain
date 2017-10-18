@@ -2,11 +2,12 @@
 ---
 
 @import 'normalize.css'
-@import 'test-partial.sass'
+// @import 'test-partial.sass'
 
 // variables
 $breakpoint-lg: 768px
 $red: #cb4f3f
+$green: #2b6c2c
 
 // mixins
 @mixin lg
@@ -24,17 +25,60 @@ img
 
 h1, h2, h3
 	font-family: 'Roboto', sans-serif
+	color: $red
+	margin: .25em 0
+
+h2
+	&.product
+		font-weight: 100
+		font-size: 1.75em
+
+p 
+	color: $green
+	font-size: 1.2em 
+
+a 
+	color: $green
+	&:hover 
+		color: $red 
+
+nav
+	font-size: 2em
+	a 
+		text-decoration: none 
+		&:hover 
+			text-decoration: underline
+		color: $red
+		font-size: 1.25em
+
+//helper classes
+.btn 
+	padding: 1em
+	border: 1px solid $green
+	border-radius: 8px 
+	text-align: center
+	margin: 2em 0
+	font-size: 1.1em
+	&:hover 
+		border: 1px solid $red
+		color: $red
 
 //grid
 .row
 	@include lg
 		padding: 3em
-		.grid-half
-			display: inline-block
-			width: 50%
-			vertical-align: top 
+		.grid
 			.content 
 				padding: 2em
+			&--half
+				display: inline-block
+				width: 50%
+				vertical-align: top 
+		.grid
+			&--full
+				display: block 
+				width: 100%
+
 
 //header
 

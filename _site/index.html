@@ -13,6 +13,11 @@
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto" rel="stylesheet">  <link rel="stylesheet" href="/css/style.css">
   <link rel="canonical" href="http://localhost:4000/">
   <link rel="alternate" type="application/rss+xml" title="Kamma Mtn." href="/feed.xml">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+  <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="NDBhMDE5OGMtNTY3ZC00NDZjLTkyYWEtMTNkNWM3ZDVhZGQzNjM2NDM5NDM5NjQzNDE3ODUy"></script>
+
+<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
   
   
 </head>
@@ -23,13 +28,13 @@
 <header>
 
 	<div id="logo">
-	<img src="images/kamma-mtn.png" alt="Kamma Mountain Logo">
+	<a href="/"><img src="images/kamma-mtn.png" alt="Kamma Mountain Logo"></a>
 	</div>
 	<nav>
 		<ul>
-			<li>About</li>
-			<li>Donate</li>
-			<li>Shopping Cart</li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="#">Donate</a></li>
+			<li><a href="#" class="snipcart-checkout">Shopping Cart</a></li>
 		</ul>
 	</nav>
 
@@ -38,20 +43,34 @@
 
     
 <div class="row" id="spm">
-	<div class="grid-half">
+	<div class="grid grid--half">
 		<div class="content">
 			<img src="images/fpo.jpg" alt="fpo">
 		</div>
 	</div><!-- 
 	inline block comment hack 
-	--><div class="grid-half">
-		<div class="content">
-			<h2>A Swift Pair of Messengers</h2>
-			<h3>Bhikkhu Sujato</h3>
+	--><div class="grid grid--half">
+		<div class="content product">
+			<h1>A Swift Pair of Messengers</h1>
+			<h2 class="product">Bhikkhu Sujato</h2>
 			<p><em>Calm with insight in the Buddha's words.</em></p>
 			<p><em>A Swift Pair of Messengers</em> clears up any confusion for Buddhists trying to understand the path of meditation as taught by the Buddha in the Suttas of the Pali canon.</p>
 			<p>The practices of samatha (calm) and vipassana (insight) are clearly explained by way of this well researched text.</p>
-			<p><a href="#">Get it free + $3 shipping in the U.S.</a></p>
+			<p>
+			<button
+			    class="snipcart-add-item btn"
+			    data-item-id="1"
+			    data-item-name="A Swift Pair of Messengers"
+			    data-item-price="$3.00"
+			    data-item-weight="0"
+			    data-item-url="/"
+			    data-item-description="Bhikkhu Sujato">
+			        Get it free + $3 shipping in the U.S.
+			</button>
+			</p>
+
+
+			<p><a href="#">Download the ebook</a></p>
 			<p>For orders outside the U.S. please <a href="#">contact us directly.</a></p>
 			<p>Maximum of two books per customer</p>
 		</div>
