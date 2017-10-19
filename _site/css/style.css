@@ -18,7 +18,8 @@ h2.product {
 
 p {
   color: #2b6c2c;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  margin: 0.5em 0; }
 
 a {
   color: #2b6c2c; }
@@ -33,13 +34,15 @@ nav {
     font-size: 1.25em; }
     nav a:hover {
       text-decoration: underline; }
+  nav ul {
+    padding: 0; }
 
 .btn {
   padding: 1em;
   border: 1px solid #2b6c2c;
   border-radius: 8px;
   text-align: center;
-  margin: 2em 0;
+  margin: 1em 0;
   font-size: 1.1em;
   color: #2b6c2c; }
   .btn:hover {
@@ -65,8 +68,8 @@ nav {
   height: auto;
   position: relative;
   margin: 0 auto;
-  max-width: 370px;
-  padding: 1rem; }
+  max-width: 400px;
+  padding: 0.5rem; }
   @media (min-width: 768px) {
     #logo {
       width: 33%;
@@ -74,12 +77,12 @@ nav {
 
 nav {
   color: #cb4f3f;
-  font-size: 1.25em; }
+  font-size: 1.5em; }
   @media (min-width: 768px) {
     nav ul {
       text-align: center; }
       nav ul li {
         display: inline-block;
-        padding: 0.5em 1em;
+        padding: 0 2.5em;
         text-align: center;
         text-decoration: none; } }
