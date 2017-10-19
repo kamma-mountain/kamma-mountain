@@ -40,10 +40,12 @@ nav {
   border-radius: 8px;
   text-align: center;
   margin: 2em 0;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  color: #2b6c2c; }
   .btn:hover {
     border: 1px solid #cb4f3f;
-    color: #cb4f3f; }
+    color: #cb4f3f;
+    cursor: pointer; }
 
 @media (min-width: 768px) {
   .row {
