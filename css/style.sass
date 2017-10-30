@@ -18,6 +18,9 @@ $green: #2b6c2c
 body
 	background-color: #ffffff
 	font-family: 'Inconsolata', monospace
+	padding: 1em
+	+lg 
+		padding: 2em
 
 img
 	max-width: 100%
@@ -26,18 +29,22 @@ img
 h1, h2, h3
 	font-family: 'Roboto', sans-serif
 	color: $red
-	margin: .25em 0
+	margin: 1em 0 0 0
+
+h1 
+	margin: 2em 0
 
 h2
 	&.product
 		font-weight: 100
 		font-size: 1.75em
 
-p 
+ul, p
 	color: $green
 	font-size: 1.2em 
 	line-height: 1.4
 	margin: .5em 0
+	padding: 0
 
 a 
 	color: $green
@@ -45,7 +52,8 @@ a
 		color: $red 
 
 nav
-	font-size: 2em
+	color: $red
+	font-size: 1.2em
 	a 
 		text-decoration: none 
 		&:hover 
@@ -54,6 +62,14 @@ nav
 		font-size: 1.25em
 	ul 
 		padding: 0
+		li 
+			list-style: none 
+			+lg
+				display: inline-block
+				padding: 0 2.5em
+				text-align: center
+		+lg
+			text-align: center
 
 //helper classes
 .btn 
@@ -71,16 +87,20 @@ nav
 
 //grid
 .row
+	padding: 1em 0 0 0
 	@include lg
-		padding: 3em
+		padding: 2em 0 0 0
 		.grid
 			.content 
 				padding: 2em
+			&--third
+				display: inline-block
+				width: 33.33%
+				vertical-align: top
 			&--half
 				display: inline-block
 				width: 50%
 				vertical-align: top 
-		.grid
 			&--full
 				display: block 
 				width: 100%
@@ -98,14 +118,37 @@ nav
 	+lg
 		width: 33%
 		padding: 3rem
-nav
-	color: $red
-	font-size: 1.5em
+
+//footer
+footer
+	border-top: 1px solid $red
+	padding: 1em 0 2em 0
+	.row 
+		margin-top: 0
+		padding-top: 0
+	h1#donate 
+		text-align: center
+		margin: 1em 0
+	.btn 
+		display: block 
+		width: 100%
+
+//home
+.product 
+	h1
+		margin: 0
+	h2 
+		margin: .25em 0
+
+//about
+ul#contact
+	li 
+		list-style: none 
+		em 
+			font-weight: bold
+			font-style: normal
 	+lg
-		ul
-			text-align: center
-			li 
-				display: inline-block
-				padding: 0 2.5em
-				text-align: center
-				text-decoration: none 
+		li
+			display: inline-block
+			padding: 1em 1em 1em 0
+

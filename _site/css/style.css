@@ -1,7 +1,11 @@
 @import url(normalize.css);
 body {
   background-color: #ffffff;
-  font-family: "Inconsolata", monospace; }
+  font-family: "Inconsolata", monospace;
+  padding: 1em; }
+  @media (min-width: 768px) {
+    body {
+      padding: 2em; } }
 
 img {
   max-width: 100%;
@@ -10,17 +14,21 @@ img {
 h1, h2, h3 {
   font-family: "Roboto", sans-serif;
   color: #cb4f3f;
-  margin: 0.25em 0; }
+  margin: 1em 0 0 0; }
+
+h1 {
+  margin: 2em 0; }
 
 h2.product {
   font-weight: 100;
   font-size: 1.75em; }
 
-p {
+ul, p {
   color: #2b6c2c;
   font-size: 1.2em;
   line-height: 1.4;
-  margin: 0.5em 0; }
+  margin: 0.5em 0;
+  padding: 0; }
 
 a {
   color: #2b6c2c; }
@@ -28,7 +36,8 @@ a {
     color: #cb4f3f; }
 
 nav {
-  font-size: 2em; }
+  color: #cb4f3f;
+  font-size: 1.2em; }
   nav a {
     text-decoration: none;
     color: #cb4f3f;
@@ -37,6 +46,16 @@ nav {
       text-decoration: underline; }
   nav ul {
     padding: 0; }
+    nav ul li {
+      list-style: none; }
+      @media (min-width: 768px) {
+        nav ul li {
+          display: inline-block;
+          padding: 0 2.5em;
+          text-align: center; } }
+    @media (min-width: 768px) {
+      nav ul {
+        text-align: center; } }
 
 .btn {
   padding: 1em;
@@ -51,18 +70,24 @@ nav {
     color: #cb4f3f;
     cursor: pointer; }
 
-@media (min-width: 768px) {
-  .row {
-    padding: 3em; }
-    .row .grid .content {
-      padding: 2em; }
-    .row .grid--half {
-      display: inline-block;
-      width: 50%;
-      vertical-align: top; }
-    .row .grid--full {
-      display: block;
-      width: 100%; } }
+.row {
+  padding: 1em 0 0 0; }
+  @media (min-width: 768px) {
+    .row {
+      padding: 2em 0 0 0; }
+      .row .grid .content {
+        padding: 2em; }
+      .row .grid--third {
+        display: inline-block;
+        width: 33.33%;
+        vertical-align: top; }
+      .row .grid--half {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top; }
+      .row .grid--full {
+        display: block;
+        width: 100%; } }
 
 #logo {
   width: 90%;
@@ -76,14 +101,30 @@ nav {
       width: 33%;
       padding: 3rem; } }
 
-nav {
-  color: #cb4f3f;
-  font-size: 1.5em; }
-  @media (min-width: 768px) {
-    nav ul {
-      text-align: center; }
-      nav ul li {
-        display: inline-block;
-        padding: 0 2.5em;
-        text-align: center;
-        text-decoration: none; } }
+footer {
+  border-top: 1px solid #cb4f3f;
+  padding: 1em 0 2em 0; }
+  footer .row {
+    margin-top: 0;
+    padding-top: 0; }
+  footer h1#donate {
+    text-align: center;
+    margin: 1em 0; }
+  footer .btn {
+    display: block;
+    width: 100%; }
+
+.product h1 {
+  margin: 0; }
+.product h2 {
+  margin: 0.25em 0; }
+
+ul#contact li {
+  list-style: none; }
+  ul#contact li em {
+    font-weight: bold;
+    font-style: normal; }
+@media (min-width: 768px) {
+  ul#contact li {
+    display: inline-block;
+    padding: 1em 1em 1em 0; } }
