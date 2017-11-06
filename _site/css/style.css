@@ -70,6 +70,16 @@ nav {
     color: #cb4f3f;
     cursor: pointer; }
 
+.not-a-btn {
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+  display: block;
+  margin: 1em 0;
+  font-size: 1.1em;
+  color: #2b6c2c;
+  background-color: #ccc; }
+
 .row {
   padding: 1em 0 0 0; }
   @media (min-width: 768px) {
