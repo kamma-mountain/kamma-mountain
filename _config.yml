@@ -18,7 +18,7 @@ email: kamma.mountain@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Kamma Mountain is a 501(c)(3) non-profit publishing and distributing Buddhist books for free distribution.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://kammam.tn" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kamma_mtn
 instagram_username: kamma_mtn
 github_username:  kamma-mountain
