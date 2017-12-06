@@ -1,0 +1,9 @@
+desc 'publishing kamma mtn via rsync'
+task :deploy do
+  puts 'deploying…'
+  user = 'semagr.am'
+  server = 's147459.gridserver.com'
+  path = 'domains/kammam.tn/html'
+  sh "rsync -rtzh --delete _site/ #{user}@#{server}:#{path}"
+  puts 'Your website is now published'
+end
