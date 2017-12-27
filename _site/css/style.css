@@ -78,7 +78,7 @@ nav {
   margin: 1em 0;
   font-size: 1.1em;
   color: #2b6c2c;
-  background-color: #ccc; }
+  border: 1px solid #2b6c2c; }
 
 .center {
   text-align: center; }
